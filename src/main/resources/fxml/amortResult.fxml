@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #282c3e;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="34.0" layoutY="257.0" prefHeight="34.0" prefWidth="218.0" text="Амортизация за год:" textFill="WHITE">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="18.0" layoutY="183.0" prefHeight="34.0" prefWidth="249.0" text="Амортизация за месяц:" textFill="WHITE">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="113.0" fitWidth="162.0" layoutX="34.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true" rotate="-1.0">
+         <image>
+            <Image url="@../images/amort_result.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="monthAmort" layoutX="275.0" layoutY="183.0" prefHeight="17.0" prefWidth="311.0" textFill="WHITE">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="yearAmort" layoutX="275.0" layoutY="257.0" prefHeight="17.0" prefWidth="311.0" textFill="WHITE">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="205.0" layoutY="62.0" text="Амортизационные отчисления" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

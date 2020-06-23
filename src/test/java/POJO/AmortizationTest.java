@@ -11,7 +11,7 @@ public class AmortizationTest {
     private Amortization actualAmortization;
 
     @Test
-    public void CRUID() {
+    public void CRUD() {
         HibernateUtil.buildSessionFactory();
         Session session = HibernateUtil.getSession();
         actualAmortization = createAmortization();

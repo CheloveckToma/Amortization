@@ -14,7 +14,17 @@ import tables.DisplayTable;
 
 import java.io.IOException;
 
+/**
+ *  класс для открытия н
+ */
+
 public class Window {
+
+    /**
+     * Метод открывает окно добавления записи оборудования
+     * @param displayTable - объект класса для отображения таблиц
+     * @catch IOException - ошибка ввода и вывода
+     */
 
     public static void openAddNoteWindow(DisplayTable displayTable) {
         try {
@@ -41,6 +51,12 @@ public class Window {
 
     }
 
+    /**
+     * Метод открывает окно удаления записи оборудования
+     * @param displayTable - объект класса для отображения таблиц
+     * @catch IOException - ошибка ввода и вывода
+     */
+
     public static void openDelNoteWindow(DisplayTable displayTable) {
         try {
             FXMLLoader fxmlLoader = new FXMLLoader(Windows.class.getResource("/fxml/delNoteWindow.fxml"));
@@ -65,6 +81,11 @@ public class Window {
         }
 
     }
+
+    /**
+     * Метод открывает окно результатов вычислений
+     * @catch IOException - ошибка ввода и вывода
+     */
 
     public static void openAmortResultNoteWindow(Double yearAmort,Double monthAmort) {
         try {
@@ -91,6 +112,12 @@ public class Window {
         }
 
     }
+
+    /**
+     * Метод открывает окно редактирования записи оборудования
+     * @param displayTable - объект класса для отображения таблиц
+     * @catch IOException - ошибка ввода и вывода
+     */
 
     public static void openEditNoteWindow(DisplayTable displayTable) {
         try {

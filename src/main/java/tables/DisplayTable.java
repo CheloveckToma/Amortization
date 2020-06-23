@@ -9,6 +9,8 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import main.HibernateUtil;
 import org.hibernate.Session;
 
+import java.io.IOException;
+
 public class DisplayTable {
 
     private TableСondition tableСondition;
@@ -18,6 +20,11 @@ public class DisplayTable {
         this.amortizationTableView = amortizationTableView;;
         this.tableСondition = tableСondition;
     }
+
+    /**
+     * Метод открывает окно добавления оборудования
+     * @throws IOException - ошибка ввода и вывода
+     */
 
     public void showAmortizationTable() {
         amortizationTableView.getColumns().clear();

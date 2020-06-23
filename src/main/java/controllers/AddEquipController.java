@@ -9,6 +9,10 @@ import main.HibernateUtil;
 import org.hibernate.Session;
 import tables.DisplayTable;
 
+/**
+ * Контроллер для окна добавления записей о посещаемости
+ */
+
 public class AddEquipController {
 
     @FXML
@@ -47,9 +51,18 @@ public class AddEquipController {
             clearFields();
         });
     }
+
+    /**
+     * @param displayTable - объект отображения таблицы
+     */
+
     public void setDisplayTable(DisplayTable displayTable) {
         this.displayTable = displayTable;
     }
+
+    /**
+     * Метод чистит поля ввода
+     */
 
     private void clearFields() {
         equipName.clear();

@@ -9,7 +9,8 @@ import main.HibernateUtil;
 import org.hibernate.Session;
 import tables.DisplayTable;
 
-public class EditEquipController {
+public class AddEquipController {
+
     @FXML
     private TextField equipName;
 
@@ -20,26 +21,24 @@ public class EditEquipController {
     private TextField usefulLife;
 
     @FXML
-    private Button editButton;
-
-    @FXML
-    private TextField equipID;
+    private Button addButton;
 
     private DisplayTable displayTable;
 
     @FXML
     void initialize() {
-        editButton.setOnAction(editEvent->{
+        addButton.setOnAction(delEvent->{
             Session session = HibernateUtil.getSession();
 
             AmortizationDAO amortizationDAO = new AmortizationDAO(session);
 
-            Amortization amortization = amortizationDAO.findById(Integer.parseInt(equipID.getText()));
+            Amortization amortization = new Amortization();
+
             amortization.setEquipmentName(equipName.getText());
             amortization.setEquipmentPrice(Long.parseLong(equipPrice.getText()));
             amortization.setEquipmentUsefulLife(Long.parseLong(usefulLife.getText()));
 
-            amortizationDAO.update(amortization);
+            amortizationDAO.save(amortization);
 
             session.close();
 
@@ -48,15 +47,14 @@ public class EditEquipController {
             clearFields();
         });
     }
-
     public void setDisplayTable(DisplayTable displayTable) {
         this.displayTable = displayTable;
     }
 
     private void clearFields() {
         equipName.clear();
-        equipPrice.clear();
         usefulLife.clear();
-        equipID.clear();
+        equipPrice.clear();
     }
 }
+

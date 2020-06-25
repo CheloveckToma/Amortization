@@ -23,7 +23,6 @@ public class DisplayTable {
 
     /**
      * Метод открывает окно добавления оборудования
-     * @throws IOException - ошибка ввода и вывода
      */
 
     public void showAmortizationTable() {

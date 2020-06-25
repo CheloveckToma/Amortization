@@ -15,5 +15,4 @@ public class Main extends Application {
        // primaryStage.getIcons().add(new Image("/images/main_icon.png"));
         primaryStage.show();
     }
-
 }

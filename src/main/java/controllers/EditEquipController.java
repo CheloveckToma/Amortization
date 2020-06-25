@@ -9,6 +9,10 @@ import main.HibernateUtil;
 import org.hibernate.Session;
 import tables.DisplayTable;
 
+/**
+ * Контроллер для окна редактирования записей о посещаемости
+ */
+
 public class EditEquipController {
     @FXML
     private TextField equipName;

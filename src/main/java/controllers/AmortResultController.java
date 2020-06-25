@@ -3,6 +3,10 @@ package controllers;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 
+/**
+ * Контроллер для окна вывода результатов амортизации
+ */
+
 public class AmortResultController {
     @FXML
     private Label monthAmort;
